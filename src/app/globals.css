@@ -10,6 +10,24 @@
   --color-secondary: #180039;
   --color-textColor: #1D1E20;
   --color-netural: #E9F3F4;
+  --color-accent: #023247;
+
+  --animate-fade-in-top : fade-in-top ease-out 1000ms ;
+
+
+  @keyframes fade-in-top  {
+    0% {
+      opacity: 0;
+      transform : translateY(200px);
+    }
+    50% {
+      opacity : 50%;
+    }
+    100% {
+      opacity : 100%;
+      transform : translateY(0);
+    }
+  }
 }
 
 @theme inline {
