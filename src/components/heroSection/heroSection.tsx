@@ -13,7 +13,7 @@ const HeroSection = () => {
     useEffect(() => {
 
         const observer = new IntersectionObserver(([entry]) => {
-            console.log(entry)
+            // console.log(entry)
             setIsVisible(true)
         } , {rootMargin : '-300px' , threshold : 1})
 
