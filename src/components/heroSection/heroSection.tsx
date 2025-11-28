@@ -15,9 +15,9 @@ const HeroSection = () => {
         const observer = new IntersectionObserver(([entry]) => {
             console.log(entry)
             setIsVisible(true)
-        } , {rootMargin : '-300px'})
+        } , {rootMargin : '-300px' , threshold : 1})
 
-        console.log(isVisible)
+        // console.log(isVisible)
         if(ref.current)
             observer.observe(ref?.current);
 
@@ -27,7 +27,7 @@ const HeroSection = () => {
 
 
     return (
-        <div ref={ref} className="w-full overflow-hidden flex items-start p-10 px-16 text-textColor justify-center min-h-screen h-[1000px] bg-netural " >
+        <div ref={ref} className="w-full overflow-hidden flex items-start p-10 px-16 text-textColor justify-center min-h-screen h-[800px] bg-netural " >
             <HeroTexts isVisible={isVisible} />
             <HeroCards isVisible={isVisible} />
         </div>
