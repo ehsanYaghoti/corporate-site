@@ -8,7 +8,7 @@ import AuthLinks from "./authLinks";
 const Header = () => {
 
     return (
-        <header className="h-20 w-full px-16 py-2 flex items-center justify-between bg-netural text-textColor sticky " >
+        <header className="h-20 w-full px-16 py-2 flex items-center justify-between bg-netural text-textColor sticky top-0 z-50" >
             <div className="flex items-center gap-20">
                 <Logo />
                 <Navbar />
