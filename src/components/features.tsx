@@ -14,7 +14,7 @@ const Features = () => {
     const callbackFunciton = (entries: IntersectionObserverEntry[] , observer : IntersectionObserver ) => {
         const [entry] = entries;
         console.log(entry.intersectionRatio)
-        if(entry.intersectionRatio > 0.5){
+        if(entry.intersectionRatio > 0.2){
             setIsVisible(true);
             observer.unobserve(entry.target);
             observer.disconnect();
@@ -24,7 +24,7 @@ const Features = () => {
         // }
     }
 
-    const options = { root: null, rootMargin: "0px", threshold: 0.5 }
+    const options = { root: null, rootMargin: "0px", threshold: 0.2 }
 
     console.log(isVisible)
 
