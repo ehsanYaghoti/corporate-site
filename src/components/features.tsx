@@ -1,49 +1,11 @@
 'use client';
 
+import useElementObserver from "@/hooks/useElementObserver";
 import { CreditCard, Landmark, ShieldHalf } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
-
-
 
 const Features = () => {
 
-    const [isVisible, setIsVisible] = useState<boolean>(false);
-
-    const containerRef = useRef(null);
-
-    const callbackFunciton = (entries: IntersectionObserverEntry[] , observer : IntersectionObserver ) => {
-        const [entry] = entries;
-        console.log(entry.intersectionRatio)
-        if(entry.intersectionRatio > 0.2){
-            setIsVisible(true);
-            observer.unobserve(entry.target);
-            observer.disconnect();
-        }
-        // if(entry.intersectionRatio < 5){
-        //     setIsVisible(false);
-        // }
-    }
-
-    const options = { root: null, rootMargin: "0px", threshold: 0.2 }
-
-    console.log(isVisible)
-
-
-    useEffect(() => {
-
-        const observer = new IntersectionObserver(callbackFunciton, options)
-
-        if (containerRef.current)
-            observer.observe(containerRef?.current);
-
-        return () => {
-            if (containerRef.current) {
-                observer.unobserve(containerRef.current);
-            }
-            observer.disconnect();
-        }
-
-    }, [containerRef , options])
+    const [containerRef, isVisible] = useElementObserver<HTMLDivElement>({ root: null, rootMargin: "0px", threshold: 0.2 })
 
     return (
         <section ref={containerRef} className=" border-2 p-16 m-10 w-[80%] -mt-30  z-40 bg-white border-black/10 text-textColor rounded-xl shadow-xl flex flex-col gap-16  " >
