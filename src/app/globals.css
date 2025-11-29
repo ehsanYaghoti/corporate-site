@@ -13,6 +13,9 @@
   --color-accent: #023247;
 
   --animate-fade-in-top : fade-in-top ease-out 1000ms ;
+  --animate-fade-in-top-s : fade-in-top-s ease-out 700ms ;
+  --animate-fade-in-top-xs : fade-in-top-xs ease-out 500ms ;
+
 
 
   @keyframes fade-in-top  {
@@ -20,8 +23,27 @@
       opacity: 0;
       transform : translateY(200px);
     }
-    50% {
-      opacity : 50%;
+    100% {
+      opacity : 100%;
+      transform : translateY(0);
+    }
+  }
+
+  @keyframes fade-in-top-s  {
+    0% {
+      opacity: 0;
+      transform : translateY(100px);
+    }
+    100% {
+      opacity : 100%;
+      transform : translateY(0);
+    }
+  }
+
+  @keyframes fade-in-top-xs  {
+    0% {
+      opacity: 0;
+      transform : translateY(50px);
     }
     100% {
       opacity : 100%;
