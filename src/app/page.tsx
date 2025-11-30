@@ -1,6 +1,7 @@
 import Features from "@/components/features";
 import Header from "@/components/general/header";
 import HeroSection from "@/components/heroSection/heroSection";
+import Plans from "@/components/plans";
 import Steps from "@/components/steps";
 import WhyFinpay from "@/components/whyFinpay";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Features />
       <WhyFinpay />
       <Steps />
+      <Plans />
     </main>
   );
 }
