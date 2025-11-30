@@ -76,5 +76,17 @@ body {
 
 .logo-icon {
   clip-path: polygon(0 0, 0 75%, 70% 20%, 70% 70%, 35% 100%, 100% 100%, 100% 0);
+}
 
+.delay-transition {
+  transition-delay: calc(var(--animation-delay) * 1ms);
+}
+
+.delay-transition-1 {
+  transition-delay: calc(var(--animation-delay) * 1ms + 200ms);
+
+}
+
+.delay-transition-2 {
+  transition-delay: calc(var(--animation-delay) * 1ms + 400ms);
 }
