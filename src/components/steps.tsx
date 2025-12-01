@@ -12,7 +12,10 @@ const Steps = () => {
         <div ref={containerRef} className=" w-full p-20 bg-accent text-white flex flex-col gap-12 " >
             <div className="flex flex-col gap-3 " >
                 <span className={`${isVisible ? "opacity-100" : "opacity-0"} duration-1000 ease-out transition-all text-xs text-primary uppercase font-medium`} >Step</span>
-                <h2 className={` ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10 "} duration-1000 delay-200 ease-out transition-all text-3xl  leading-10`} >
+                <h2 className={
+                    `${isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10 "} duration-1000 delay-200 ease-out transition-all
+                    text-3xl  leading-10`
+                }>
                     Maximize your returns with a <br /> Reserve account that generates.
                 </h2>
             </div>

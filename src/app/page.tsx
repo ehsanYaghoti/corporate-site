@@ -3,6 +3,7 @@ import Header from "@/components/general/header";
 import HeroSection from "@/components/heroSection/heroSection";
 import Plans from "@/components/plans";
 import Steps from "@/components/steps";
+import WhatsNext from "@/components/whatsNext";
 import WhyFinpay from "@/components/whyFinpay";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <WhyFinpay />
       <Steps />
       <Plans />
+      <WhatsNext />
     </main>
   );
 }

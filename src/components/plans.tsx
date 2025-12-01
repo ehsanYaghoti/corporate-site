@@ -1,7 +1,6 @@
 "use client"
 
 import useElementObserver from "@/hooks/useElementObserver";
-import { ArrowUpRight } from "lucide-react";
 import PlansCard from "./cards/plansCard";
 
 
@@ -33,7 +32,7 @@ const Plans = () => {
             <div className="flex flex-col items-center gap-6" >
                 <span className={`${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 "} duration-1000 delay-700 ease-out transition-all text-xs uppercase font-medium`} >Choose Plan:</span>
                 <div className="grid grid-cols-2 gap-6" >
-                    <PlansCard isVisible={isVisible} styles="bg-netural" title="Basic" cost="$2.99/month" bgImage={false} />    
+                    <PlansCard isVisible={isVisible} styles="bg-netural" title="Plus" cost="$2.99/month" bgImage={false} />    
                     <PlansCard isVisible={isVisible} styles="bg-primary text-white" title="Premium" cost="$6.99/month" bgImage={true} />
                 </div>
             </div>
