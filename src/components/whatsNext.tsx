@@ -11,7 +11,7 @@ const WhatsNext = () => {
     const [containerRef , isVisible] = useElementObserver<HTMLDivElement>({root : null , rootMargin : "0px" , threshold : 0.2})
 
     return (
-        <div ref={containerRef} className="flex items-center justify-between bg-accent p-16 w-[80%] rounded-xl text-white -mb-32 z-20" >
+        <div ref={containerRef} className="flex items-center justify-between bg-accent p-16 w-[80%] rounded-xl text-white -mb-32 z-20 overflow-hidden" >
             <div className="flex flex-col gap-7" >
                 <span className={
                     ` ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 "} duration-1000 ease-out transition-all

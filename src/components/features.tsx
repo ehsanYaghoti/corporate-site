@@ -8,7 +8,7 @@ const Features = () => {
     const [containerRef, isVisible] = useElementObserver<HTMLDivElement>({ root: null, rootMargin: "0px", threshold: 0.2 })
 
     return (
-        <section ref={containerRef} className=" border-2 p-16 m-10 w-[80%] -mt-30  z-40 bg-white border-black/10 text-textColor rounded-xl shadow-xl flex flex-col gap-16  " >
+        <section ref={containerRef} className=" border-2 p-16 m-10 w-[80%] -mt-30  z-40 bg-white border-black/10 text-textColor rounded-xl shadow-xl flex flex-col gap-16 overflow-hidden " >
             <div className=" flex items-center justify-between" >
                 <div className={`${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-36'} transition-all duration-1000 ease-out flex flex-col gap-3`} >
                     <span className=" text-sm font-semibold text-primary uppercase " >Futute Payment</span>

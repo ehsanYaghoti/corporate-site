@@ -10,7 +10,7 @@ const Footer = () => {
     const [containerRef , isVisible] = useElementObserver<HTMLDivElement>({root : null , rootMargin : "0px" , threshold : 0.2})
    
     return (
-        <footer ref={containerRef} className="w-full flex flex-col divide-y-2 divide-black/5 px-16 pt-36 bg-netural" >
+        <footer ref={containerRef} className="w-full flex flex-col divide-y-2 divide-black/5 px-16 pt-36 bg-netural overflow-hidden" >
             <div className={`
                 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 "} duration-1000 delay-400 ease-out transition-all 
                 flex items-start justify-between py-16 pb-12`

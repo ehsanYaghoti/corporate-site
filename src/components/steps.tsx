@@ -9,7 +9,7 @@ const Steps = () => {
     const [containerRef , isVisible] = useElementObserver<HTMLDivElement>({root : null , rootMargin : "0px" , threshold : 0.2}) 
 
     return (
-        <div ref={containerRef} className=" w-full p-20 bg-accent text-white flex flex-col gap-12 " >
+        <div ref={containerRef} className=" w-full p-20 bg-accent text-white flex flex-col gap-12 overflow-hidden" >
             <div className="flex flex-col gap-3 " >
                 <span className={`${isVisible ? "opacity-100" : "opacity-0"} duration-1000 ease-out transition-all text-xs text-primary uppercase font-medium`} >Step</span>
                 <h2 className={
