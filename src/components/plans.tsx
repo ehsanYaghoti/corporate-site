@@ -12,7 +12,7 @@ const Plans = () => {
         <div ref={containerRef} className="flex flex-col items-center gap-16 py-22 w-full overflow-hidden" >
             <div className="flex flex-col items-center gap-4" >
                 <span className={` ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 "} duration-1000 ease-out transition-all text-xs uppercase text-primary  font-medium`} >Our Mission</span>
-                <h2 className={` ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 "} duration-1000 delay-200 ease-out transition-all text-4xl text-center `} >We've helped <br /> innovative companies</h2>
+                <h2 className={` ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 "} duration-1000 delay-200 ease-out transition-all text-4xl text-center `} >We have helped <br /> innovative companies</h2>
                 <p className={` ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 "} duration-1000 delay-400 ease-out transition-all text-center text-sm leading-8 text-textColor/70 `} >Hundreds of all sizes and across all industries <br /> have made a big improvements with us. </p>
             </div>
             <div className="flex gap-16 " >

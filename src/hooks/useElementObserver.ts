@@ -8,31 +8,33 @@ function useElementObserver<T extends Element>(options: IntersectionObserverInit
 
     const containerRef = useRef<T>(null);
 
-    const callbackFunction = (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => {
-
-        const [entry] = entries;
-
-        if (entry.intersectionRatio > (options.threshold as number)) {
-            setIsVisible(true)
-            observer.unobserve(entry.target)
-        }
-
-    }
-
     useEffect(() => {
+
+        const callbackFunction = (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => {
+
+            const [entry] = entries;
+
+            if (entry.intersectionRatio > (options.threshold as number)) {
+                setIsVisible(true)
+                observer.unobserve(entry.target)
+            }
+
+        }
 
         const observer = new IntersectionObserver(callbackFunction, options)
 
-        if (containerRef.current)
-            observer.observe(containerRef?.current);
+        const current = containerRef?.current;
+
+        if (current)
+            observer.observe(current);
 
         return () => {
-            if (containerRef?.current) {
-                observer.unobserve(containerRef?.current)
+            if (current) {
+                observer.unobserve(current)
             }
             observer.disconnect()
         }
-    }, [isVisible, containerRef])
+    }, [isVisible, containerRef , options])
 
     return [containerRef, isVisible] as const;
 }
