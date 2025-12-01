@@ -1,4 +1,5 @@
 import Features from "@/components/features";
+import Footer from "@/components/general/footer";
 import Header from "@/components/general/header";
 import HeroSection from "@/components/heroSection/heroSection";
 import Plans from "@/components/plans";
@@ -16,6 +17,7 @@ export default function Home() {
       <Steps />
       <Plans />
       <WhatsNext />
+      <Footer />
     </main>
   );
 }
