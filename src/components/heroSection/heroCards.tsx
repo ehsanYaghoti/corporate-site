@@ -48,7 +48,7 @@ const HeroCards = ({isVisible} : {isVisible : boolean}) => {
                     <p className="font-semibold text-xl flex items-center gap-2 align-middle  "><span>234</span> <span className=" align-middle  " >**** ****</span></p>
                 </div>
                 <div className="bg-accent w-full h-20 rounded-b-3xl self-end justify-self-end p-6  pl-0  flex items-center justify-between ">
-                    <Image src={'visa.svg'} alt="visa" className=" text-start" width={100} height={100} />
+                    <Image src={'visa.svg'} alt="visa" className=" text-start w-24 h-auto " width={100} height={100} />
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-wifi-icon lucide-wifi rotate-90 text-white/80"><path d="M2 8.82a15 15 0 0 1 20 0" /><path d="M5 12.859a10 10 0 0 1 14 0" /><path d="M8.5 16.429a5 5 0 0 1 7 0" /></svg>
                 </div>
             </div>

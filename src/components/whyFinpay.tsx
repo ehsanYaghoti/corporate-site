@@ -40,7 +40,11 @@ const WhyFinpay = () => {
                             Generate return on your <br /> cash reserves without making <br /> any investments
                         </p>
                     </div>
-                    <Image src={'/finance-chart.png'} alt="why finapy" className={`${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20 "} duration-1000 delay-2200 ease-out transition-all object-cover rounded-t-2xl translate-y-4 shadow-2xl `} width={400} height={100} />
+                    <Image src={'/finance-chart.png'} alt="why finapy" className={
+                        `${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20 "} duration-1000 delay-2200 ease-out transition-all 
+                         rounded-t-2xl translate-y-4 shadow-2xl w-[400px] h-auto `
+                        } 
+                        width={400} height={100} />
                 </div>
             </div>
         </div>
