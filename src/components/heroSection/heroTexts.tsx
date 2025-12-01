@@ -5,7 +5,7 @@ const HeroTexts = ({ isVisible }: { isVisible: boolean }) => {
     return (
         <div className="flex flex-col items-start justify-start gap-6 w-1/2 p-8 " >
             <h1 className={`${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20 "} duration-1000 ease-out transition-all text-6xl font-normal font-str w-full leading-[75px]`} >
-                <span className=" font-extrabold flex" >Get paid early</span> save automatically <br /> all yout pay.
+                <span className=" font-extrabold flex" >Get paid early</span> save automatically <br /> all your pay.
             </h1>
             <p className={`${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20 "} duration-1000 ease-out delay-100 transition-all text-sm font-semibold text-textColor/50`} >
                 Supports small businesses with simple invoicing, <br /> powerful integrations, and cash flow management tools.
