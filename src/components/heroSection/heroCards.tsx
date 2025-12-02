@@ -3,14 +3,14 @@ import Image from "next/image";
 const HeroCards = ({isVisible} : {isVisible : boolean}) => {
 
     return (
-        <div className="w-1/2 relative h-full" >
+        <div className="lg:w-1/3 xl:w-1/2 relative h-full" >
             <div className={`${isVisible ? " opacity-100 translate-x-0" : "opacity-0 -translate-x-36"} duration-1500 ease-out delay-1500 transition-all z-10 absolute -right-18 top-26 `} >
                 <div className=" w-80 h-24 bg-black/5 -skew-20 -rotate-20 -translate-y-[27px] " ></div>
                 <div className=" w-56 h-24 bg-black/5 -skew-20 -rotate-20 -translate-x-52 translate-y-[180px] " ></div>
                 <div className=" w-42 h-24 bg-black/5 -skew-20 -rotate-20  translate-x-38 -translate-y-24 " ></div>
                 <div className=" w-72 h-24 bg-black/5 -skew-20 -rotate-20  -translate-x-[122px] translate-y-[75px] " ></div>
             </div>
-            <div className={`${isVisible ? " opacity-100 translate-y-0" : "opacity-0 translate-y-36"} duration-1500 ease-out delay-900 transition-all flex flex-col gap-4 shadow-lg rounded-3xl p-6 min-h-[300px] w-80 bg-white absolute right-46 top-18 z-20`} >
+            <div className={`${isVisible ? " opacity-100 translate-y-0" : "opacity-0 translate-y-36"} duration-1500 ease-out delay-900 transition-all flex flex-col gap-4 shadow-lg rounded-3xl p-6 min-h-[300px] w-80 bg-white absolute lg:right-20  xl:right-46 lg:top-14 top-18 z-20`} >
                 <div className="flex items-center gap-3" >
                     <div className="bg-primary w-10 h-10 rounded-[10px] flex items-center justify-center" >
                         <div className="w-4 h-4 bg-white rounded-full rounded-tl-2xl relative after:content-[''] after:w-2 after:h-2 after:rounded-full after:absolute after:left-1/2 after:top-1/2 after:-translate-1/2 after:bg-primary after:rounded-tl-md " ></div>
@@ -42,7 +42,7 @@ const HeroCards = ({isVisible} : {isVisible : boolean}) => {
                 </div>
                 <button className="px-4 py-2 border-2 border-black/5 rounded-xl bg-accent cursor-pointer text-white" >Pay</button>
             </div>
-            <div className={`${isVisible ? " opacity-100 translate-y-0 " : "opacity-0 translate-y-40"} duration-1500 ease-out delay-1200 transition-all flex flex-col  bg-primary text-white border-white shadow-xl rounded-3xl w-48 min-h-[250px] right-26 top-10 z-30 absolute `} >
+            <div className={`${isVisible ? " opacity-100 translate-y-0 " : "opacity-0 translate-y-40"} duration-1500 ease-out delay-1200 transition-all flex flex-col  bg-primary text-white border-white shadow-xl rounded-3xl w-48 min-h-[250px] lg:right-4 xl:right-26 lg:top-6 xl:top-10 z-30 absolute `} >
                 <div className="flex flex-col gap-3 p-6 grow "  >
                     <span className=" text-xs text-white/90 " >Credit Card</span>
                     <p className="font-semibold text-xl flex items-center gap-2 align-middle  "><span>234</span> <span className=" align-middle  " >**** ****</span></p>
