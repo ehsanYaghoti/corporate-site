@@ -30,7 +30,7 @@ const MobileMenu = ({showMobileMenu , setShowMobileMenu} : {showMobileMenu : boo
                     </div>
                 </div>
             </div>
-            <div className={`${showMobileMenu ? "flex opacity-100" : "hidden opacity-0"} transition-all  fixed w-screen h-screen z-50 bg-black/50`} onClick={() => setShowMobileMenu(false)} ></div>
+            <div className={`${showMobileMenu ? "opacity-100 z-50" : " opacity-0 -z-50 "} transition-opacity duration-600 ease-out  fixed w-screen h-screen bg-black/50`} onClick={() => setShowMobileMenu(false)} ></div>
         </>
     )
 }
