@@ -15,7 +15,7 @@ const Plans = () => {
                 <h2 className={` ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 "} duration-1000 delay-200 ease-out transition-all text-4xl text-center `} >We have helped <br /> innovative companies</h2>
                 <p className={` ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 "} duration-1000 delay-400 ease-out transition-all text-center text-sm leading-8 text-textColor/70 `} >Hundreds of all sizes and across all industries <br /> have made a big improvements with us. </p>
             </div>
-            <div className="flex gap-16 " >
+            <div className="flex flex-col md:flex-row gap-16 " >
                 <div className="flex flex-col gap-3 items-center" >
                     <span className={` ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 "} duration-600 delay-400 ease-out transition-all text-5xl font-medium`} >24%</span>
                     <p className={` ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 "} duration-1000 delay-500 ease-out transition-all font-medium `}>Revenue business</p>
@@ -31,7 +31,7 @@ const Plans = () => {
             </div>
             <div className="flex flex-col items-center gap-6" >
                 <span className={`${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 "} duration-1000 delay-700 ease-out transition-all text-xs uppercase font-medium`} >Choose Plan:</span>
-                <div className="grid grid-cols-2 gap-6" >
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6" >
                     <PlansCard isVisible={isVisible} styles="bg-netural" title="Plus" cost="$2.99/month" bgImage={false} />    
                     <PlansCard isVisible={isVisible} styles="bg-primary text-white" title="Premium" cost="$6.99/month" bgImage={true} />
                 </div>

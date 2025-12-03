@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 
 
@@ -7,7 +8,7 @@ const PlansCard = ({ isVisible, styles, title, cost, bgImage }: { isVisible: boo
         <div className={
             `${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 "} 
             duration-1000 delay-900 ease-out transition-all 
-            grow w-[325px] h-42 cursor-pointer ${styles} rounded-xl px-6 py-5 flex flex-col justify-between overflow-hidden `
+            grow w-[290px] md:w-[325px] h-42 cursor-pointer ${styles} rounded-xl px-6 py-5 flex flex-col justify-between overflow-hidden `
         }>
             {
                 bgImage && <div className={`z-10 absolute -right-24 -top-28 `} >
@@ -22,13 +23,13 @@ const PlansCard = ({ isVisible, styles, title, cost, bgImage }: { isVisible: boo
                 duration-1000 delay-1400 ease-out transition-all 
                 font-semibold text-2xl`}
             >{title}</span>
-            <div className={`
+            <Link href={"#"} className={`
                 ${isVisible ? "opacity-100" : "opacity-0 "} 
                 duration-1000 delay-1400 ease-out transition-all 
                 flex items-center justify-between`}>
                 <span className="text-lg" >{cost}</span>
                 <ArrowUpRight size={24} absoluteStrokeWidth />
-            </div>
+            </Link>
         </div>
     )
 }
