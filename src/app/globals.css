@@ -12,42 +12,45 @@
   --color-netural: #E9F3F4;
   --color-accent: #023247;
 
-  --animate-fade-in-top : fade-in-top ease-out 1000ms ;
-  --animate-fade-in-top-s : fade-in-top-s ease-out 700ms ;
-  --animate-fade-in-top-xs : fade-in-top-xs ease-out 500ms ;
+  --animate-fade-in-top: fade-in-top ease-out 1000ms;
+  --animate-fade-in-top-s: fade-in-top-s ease-out 700ms;
+  --animate-fade-in-top-xs: fade-in-top-xs ease-out 500ms;
 
 
 
-  @keyframes fade-in-top  {
+  @keyframes fade-in-top {
     0% {
       opacity: 0;
-      transform : translateY(200px);
+      transform: translateY(200px);
     }
+
     100% {
-      opacity : 100%;
-      transform : translateY(0);
+      opacity: 100%;
+      transform: translateY(0);
     }
   }
 
-  @keyframes fade-in-top-s  {
+  @keyframes fade-in-top-s {
     0% {
       opacity: 0;
-      transform : translateY(100px);
+      transform: translateY(100px);
     }
+
     100% {
-      opacity : 100%;
-      transform : translateY(0);
+      opacity: 100%;
+      transform: translateY(0);
     }
   }
 
-  @keyframes fade-in-top-xs  {
+  @keyframes fade-in-top-xs {
     0% {
       opacity: 0;
-      transform : translateY(50px);
+      transform: translateY(50px);
     }
+
     100% {
-      opacity : 100%;
-      transform : translateY(0);
+      opacity: 100%;
+      transform: translateY(0);
     }
   }
 }
@@ -70,12 +73,16 @@
 body {
   background: var(--background);
   color: var(--foreground);
-    font-family: "Helvetica Neue" , 'Helvetica', 'Arial', sans-serif;
+  font-family: "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
 }
 
 
 .logo-icon {
   clip-path: polygon(0 0, 0 75%, 70% 20%, 70% 70%, 35% 100%, 100% 100%, 100% 0);
+}
+
+.icon-clip {
+  clip-path: polygon(0% 0%, 50% 30%, 100% 0%, 100% 37%, 75% 55%, 80% 60%, 80% 90%, 50% 70%, 20% 90%, 20% 60%, 25% 55%, 0 40%);
 }
 
 .delay-transition {

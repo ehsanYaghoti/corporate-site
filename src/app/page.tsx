@@ -18,7 +18,6 @@ export default function Home() {
       <Plans />
       <WhatsNext />
       <Footer />
-
     </main>
   );
 }

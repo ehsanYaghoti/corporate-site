@@ -8,14 +8,14 @@ const Features = () => {
     const [containerRef, isVisible] = useElementObserver<HTMLDivElement>({ root: null, rootMargin: "0px", threshold: 0.2 })
 
     return (
-        <section ref={containerRef} className=" border-2 p-6 lg:p-16 m-10 w-[95%] lg:w-[90%] xl:w-[80%] -mt-30 z-40 bg-white border-black/10 text-textColor 
+        <section ref={containerRef} className=" border-2 p-6 lg:p-16 m-10 w-[95%] lg:w-[90%] xl:w-[80%] -mt-30 xl:-mt-40 z-40 bg-white border-black/10 text-textColor 
             rounded-xl shadow-xl flex flex-col gap-16 overflow-hidden " 
         >
-            <div className=" flex flex-col md:gap-6 lg:gap-8 md:flex-row items-center justify-between" >
+            <div className=" flex flex-col gap-6 lg:gap-8 md:flex-row items-center justify-between" >
                 <div className={`${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-36'} transition-all duration-1000 ease-out 
-                    flex flex-col gap-3`} >
+                    flex flex-col gap-3 xl:w-1/2`} >
                     <span className=" text-sm font-semibold text-primary uppercase " >Futute Payment</span>
-                    <h2 className=" font-semibold text-3xl lg:text-4xl text-center md:text-start" >
+                    <h2 className=" font-semibold text-3xl lg:text-4xl text-center md:text-start " >
                         Experience that grows 
                         with your scale.
                     </h2>
